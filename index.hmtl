@@ -1,0 +1,73 @@
+<!doctype html>
+
+    <head>
+
+        <title> Simple Interest Calculator </title>
+
+    <!--linked scripts to calculator-->
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+        <div class="maindiv">
+        <h1>Simple Interest Calculator</h1>
+
+        <!--principal input text field-->
+        <label for="Amount"> Amount :</Label>
+        <input type="number" onkeypress="return event.charCode >= 48" min="1" id="principal"> 
+        <br>
+
+        <!--interest rate slider bar(CURRENTLY NOT UPDATING RATE ON SLIDER)-->
+
+        <label for="Rate">Interest Rate :</label>
+        <input type="range"
+        class="range"
+        id="rate"
+        min="1"
+        max="20"
+        value="10.25"
+        step=".25"
+        onchange="getSliderValue()">
+        <span id="rate_val">
+            10.25%
+        </span>
+        <br>
+
+        <!--number of years drop down select menu-->
+        <label for="No. of Years">Number of Years :</label>
+        <select id="years">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+        <br>
+
+        <!--displays results of calculator-->
+        <button onclick="compute()" onclick="checkdata()">Compute Interest</button>
+        <br>
+
+        <span id="p"></span>
+        <br>
+
+        <span id="ir"></span>
+        <br>
+
+        <span id="r"></span>
+        <br>
+
+        <span id="y"></span>
+
+        <!--footer showing ownership; tagged this way to ease CSS editing-->
+        <h2> &#169; This Calculator belongs to Daniel </h2>
+    </div>
+    </body>
+</html>
