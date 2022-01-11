@@ -16,7 +16,7 @@
 
         <!--principal input text field-->
         <label for="Amount"> Amount :</Label>
-        <input type="number" onkeypress="return event.charCode >= 48" min="1" id="principal"> 
+        <input type="number" id="principal"> 
         <br>
 
         <!--interest rate slider bar(CURRENTLY NOT UPDATING RATE ON SLIDER)-->
@@ -52,7 +52,7 @@
         <br>
 
         <!--displays results of calculator-->
-        <button onclick="compute()" onclick="checkdata()">Compute Interest</button>
+        <button onclick="compute()">Compute Interest</button>
         <br>
 
         <span id="p"></span>
