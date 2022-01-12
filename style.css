@@ -1,0 +1,38 @@
+body
+{
+background-color:black;
+font-family:arial;
+color:white;
+}
+
+h1
+{
+color:grey;
+font-family:verdana;
+text-align: Center
+}
+
+.maindiv
+{
+background-color: white;
+color: black;
+width: 600px;
+padding: 20px;
+border-radius: 25px;
+margin: auto;
+text-align: justify;
+line-height: 3em;
+}
+
+h2
+{
+color: black;
+font-family: verdana;
+text-align: left;
+font-size: small;
+}
+
+.mark
+{
+background-color: yellow;
+}
